@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Website</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<style>
+    .box.first {
+        background-color: orange!important;
+    }
+
+
+    /* pseudo class & pseudo element */
+    /* :: = pseudo element */ 
+    /* : = pseudo class */ 
+    .btn {
+        padding: 15px;
+        background-color: #ff000a;
+        border: 0;
+        color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 4px 25px 0px #ff6c00;
+        margin-left: 40px;
+        transition: 500ms;
+        text-decoration: none;
+    }
+    .btn:focus {
+        background: #0f0;
+    }
+    .btn:hover {
+        cursor: pointer;
+        background-color: brown;
+    }
+    .btn::before {
+        content: "";
+        height: 20px;
+        width: 0;
+        margin-top: -15px;
+        margin-left: 152px;
+        /* background: #fff; */
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 15px solid #fff;
+        border-bottom: 15px solid transparent;
+        position: absolute;
+    }
+    .btn::after {
+        content: "";
+        height: 20px;
+        width: 0;
+        margin-top: -15px;
+        margin-left: -5px;
+        /* background: #fff; */
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid #fff;
+        position: absolute;
+    }
+    .container2 {
+        background-color: #333;
+        width: 500px;
+        height: 300px;
+    }
+
+    h3 {
+        background-color: darkseagreen;
+    }
+    .second-h3 {
+        background-color: red;
+    }
+    .second-h3 {
+        background-color: darkmagenta;
+    }
+    /* #second-h3 {
+        background-color: darkorange;
+    } */
+</style>
+<body>
+    <h2 class="center">SELAMAT DATANG</h2>
+
+    <div class="container">
+        <a class="btn" href="https://google.com" target="_blank">Masuk Untuk Melanjutkan</a>
+        <div class="box first" id='header' style="background-color: darkblue;">
+            <h3>BOX FIRST</h3>
+            <h5>ini styling h5</h5>
+            <a class="btn" href="https://google.com" target="_blank">Masuk Untuk Melanjutkan</a>
+        </div>
+        <div class="box second" id="content">
+            <h3 class="second-h3" id='second-h3'>BOX SECOND</h3>
+        </div>
+        <div class="box third" id='footer' style="background-color: brown; font-size: 200px;">
+            <h3>BOX THIRD</h3>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="skip-iklan">SKIP IKLAN</div>
+    </div>
+</body>
+</html>

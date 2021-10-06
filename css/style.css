@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+}
+.container {
+    width: 100%; /*vieport width*/
+    height: 100vh; /* vieport height*/
+}
+.box {
+    width: 100%;
+    height: 50%; /* kalo memakai percentage element akan menyesuaikan parent */
+}
+.box.first {
+    background-color: red;
+}
+.box.second {
+    background-color: blue;
+}
+.box.third { 
+    /* box yang nyambung dengan class lain misalkan disamping, kita akan membuat styling khusus untuk class yang ada box dan ada thirdnya*/
+    background-color: black;
+}
+.box.third h3 {
+    color: white
+}
+.box.third::first-letter {
+    color: orange
+}
+
+.box.first h5 {
+    color: aqua;
+}
+.center {
+    text-align: center;
+}
+
+#footer {
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+}
+#footer h3 {
+    color: white
+}
